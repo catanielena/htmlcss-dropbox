@@ -17,6 +17,12 @@ body{
     clear: both;
 }
 
+.container{
+    width: calc( 84% - 30px);
+    /* max-width: 1200px; */
+    margin: auto;
+}
+
 a{
     display: inline-block;
     color: black;
@@ -28,18 +34,24 @@ a:not(.btn):hover{
     color: gray;
 }
 
+/* typo */
+h1{
+    font-size: 75px;
+    padding: 80px 0 40px;
+}
+
+p{
+    font-size: 15px;
+    line-height: 20px;
+}
 
 /* btn */
 .btn{
     line-height: normal;
     background-color:#0061ff;
     color: white;
-}
-
-.btn.sm{
     padding: 7px 15px;
 }
-
 
 /* header */
 header{
@@ -49,6 +61,8 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
+    background-color: white;
 }
 
 .logo, header nav{
@@ -56,15 +70,16 @@ header{
 }
 
 .logo{
-    width: 12%;
+    width: 8%;
 }
 
 .logo img{
     vertical-align: middle;
+    width: 100%;
 }
 
 nav.left, nav.right{
-    width: 44%;
+    width: 46%;
 }
 
 nav.right{
@@ -73,15 +88,44 @@ nav.right{
 
 header nav li{
     display: inline-block;
-}
-
-nav.left li{
-    margin-right: 30px;
-}
-
-nav.right li{
     margin-left: 30px;
 }
 
+
 /* main */
+main{
+    padding-top: 70px;
+}
+
+.hero{
+    background-color: #b4d0e7;
+}
+
+.hero-text, .hero-img{
+    float: left;
+}
+
+.hero-text{
+    width: 30%;
+}
+
+.hero-img{
+    width: 70%;
+    text-align: right;
+}
+
+.hero-img img{
+    width: 90%;
+    transform: translate(0, 70px);
+}
+
+.hero .btn{
+    margin: 30px 0 10px;
+}
+
+.hero .arrow-icon{
+    font-size: 40px;
+    margin: 40px 0;
+}
+
 /* footer */
