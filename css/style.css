@@ -18,8 +18,14 @@ body{
 }
 
 .container{
-    width: calc( 84% - 30px);
-    /* max-width: 1200px; */
+    width: calc(84% - 30px);
+    max-width: 1300px;
+    margin: auto;
+}
+
+.small-container{
+    width: 70%;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -30,16 +36,37 @@ a{
     font-size: 15px;
 }
 
+a.link{
+    text-decoration: underline;
+    font-size: 13px;
+    color: #0061ff;
+}
+
 a:not(.btn):hover{
     color: gray;
 }
 
+section:not(.hero){
+    margin: 200px 0;
+}
+
+.fa-check{
+    color: #0061ff;
+}
 /* typo */
 h1{
     font-size: 75px;
     padding: 80px 0 40px;
 }
 
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 25px;
+    margin: 35px 0 10px;
+}
 p{
     font-size: 15px;
     line-height: 20px;
@@ -51,6 +78,11 @@ p{
     background-color:#0061ff;
     color: white;
     padding: 7px 15px;
+    text-align: center;
+}
+
+.btn.extended{
+    width: 100%;
 }
 
 /* header */
@@ -126,6 +158,82 @@ main{
 .hero .arrow-icon{
     font-size: 40px;
     margin: 40px 0;
+}
+
+
+
+.invoice-selection{
+    margin: 50px 0 30px;
+}
+
+.invoice-selection label{
+    margin-right: 15px;
+}
+
+.plan{
+    float: left;
+    border: 1px solid #d0d0d3;
+    height: 110vh;
+}
+#professional, #advance{
+    width: calc(100% / 3 - 25px);
+}
+
+#professional{
+    margin-right: 25px;
+}
+
+#standard{
+    margin: 0 25px;
+    width: calc(100% / 3 - 50px);
+}
+
+#advance{
+    margin-left: 25px;
+}
+
+
+
+.plan-category{
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #d0d0d3;
+}
+
+.plan-details{
+    padding: 0 25px;
+}
+
+.plan-cost-period{
+    margin: 10px 0 40px;
+}
+.plans .price{
+    font-weight: 600;
+}
+
+.plans .period{
+    color: #74828f;
+}
+
+.plan-details ul{
+    list-style: none;
+    margin: 40px 0;
+}
+
+.plan-details li{
+    font-size: 13px;
+    margin: 25px 0;
+}
+
+.fa-ul li{
+    margin-left: 1.3em;
+}
+
+.line{
+    height: 1px;
+    width: 30%;
+    background-color: #d0d0d3;
+
 }
 
 /* footer */
