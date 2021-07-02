@@ -444,6 +444,8 @@ section.team{
 
 #designit{
     background-color: #a2d39b;
+    padding: -12px;
+    border: 12px solid #d0e9cd;
 }
 
 
