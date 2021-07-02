@@ -78,6 +78,9 @@ h3{
     font-size: 25px;
 }
 
+h5{
+    font-size: 16px;
+}
 p{
     font-size: 15px;
     line-height: 20px;
@@ -354,7 +357,9 @@ main{
 }
 
 
-
+section.team{
+    margin: 200px 0 100px;
+}
 
 .team-bottom{
     background-color: #f5f5f5;
@@ -456,4 +461,29 @@ main{
     right: 0;
     padding: 10px 60px;
 }
+
+section.faq{
+    margin: 100px 0;
+}
+
+.faq ul{
+    list-style: none;
+    margin-top: 70px;
+}
+
+.faq li{
+    border-top: 1px solid #dcdcde;
+    border-bottom: 1px solid #dcdcde;
+    padding: 30px 30px 30px 0;
+    margin-top: -1px;
+}
+
+
+.faq li h5{
+    float: left;
+}
+
+.faq li span{
+    float: right;
+} 
 /* footer */
