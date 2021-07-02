@@ -377,9 +377,12 @@ section.team{
 }
 
 .team-col.center{
-    padding: 40px;
+    padding: 40px 40px 0 40px;
 }
 
+.team-col.center #author{
+    margin-bottom: 0;
+}
 .team-box{
     width: 50%;
     float: left;
