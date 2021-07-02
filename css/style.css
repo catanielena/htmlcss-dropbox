@@ -65,8 +65,8 @@ h2{
 
 h3{
     font-size: 25px;
-    margin: 35px 0 10px;
 }
+
 p{
     font-size: 15px;
     line-height: 20px;
@@ -83,6 +83,12 @@ p{
 
 .btn.extended{
     width: 100%;
+}
+
+.btn.wth{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
 
 /* header */
@@ -144,11 +150,12 @@ main{
 .hero-img{
     width: 70%;
     text-align: right;
+    position: relative;
+    bottom: -70px;
 }
 
 .hero-img img{
     width: 90%;
-    transform: translate(0, 70px);
 }
 
 .hero .btn{
@@ -170,28 +177,31 @@ main{
     margin-right: 15px;
 }
 
-.plan{
-    float: left;
-    border: 1px solid #d0d0d3;
-    height: 110vh;
+.plan-row{
+    width: 100%;
 }
-#professional, #advance{
-    width: calc(100% / 3 - 25px);
+
+.plan{
+    border: 1px solid #d0d0d3;
+}
+
+.plan.plan-col{
+    height: 1000px;
+    float: left;
+    width: calc(100% / 3 - 40px); 
 }
 
 #professional{
-    margin-right: 25px;
+    margin-right: 60px;
 }
 
-#standard{
-    margin: 0 25px;
-    width: calc(100% / 3 - 50px);
+#advanced{
+    margin-left: 60px;
 }
 
-#advance{
-    margin-left: 25px;
+.plan-row{
+    margin: 60px 0;
 }
-
 
 
 .plan-category{
@@ -201,7 +211,7 @@ main{
 }
 
 .plan-details{
-    padding: 0 25px;
+    padding: 25px;
 }
 
 .plan-cost-period{
@@ -226,7 +236,42 @@ main{
 }
 
 .fa-ul li{
-    margin-left: 1.3em;
+    padding-left: 1.3em;
+}
+
+.fa-ul > li:before {
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em; 
+}
+
+.fa-ul.check > li:before{
+    content: "\f00c";
+    color: #0061ff;
+    font-weight: 900;
+}
+
+.fa-ul .user:before{
+    content: "\f007";
+}
+
+.fa-ul .pencil:before{
+    content: "\f303";
+    font-weight: 900;
+}
+
+.fa-ul .folder:before{
+    content: "\f07b";
+}
+
+.fa-ul .user-plus:before{
+    content: "\f234";
+    font-weight: 900;
+}
+
+.fa-ul .smile:before{
+    content: "\f118";
 }
 
 .line{
@@ -235,5 +280,35 @@ main{
     background-color: #d0d0d3;
 
 }
+
+#enterprise .plan-details{
+    position: relative;
+}
+
+#enterprise .plan-details a{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+
+.partner-left, .partner-right{
+    float: left;
+    width: 50%;
+}
+
+.partner-left img{
+    width: 100%;
+}
+
+.partner-right{
+    padding: 50px;
+}
+
+.partner-right p{
+    margin: 20px 0;
+}
+
+
 
 /* footer */
