@@ -38,12 +38,23 @@ a{
 
 a.link{
     text-decoration: underline;
-    font-size: 13px;
     color: #0061ff;
+    font-size: 13px;
+}
+
+p .link{
+    font-size: 15px;
+    line-height: 20px;
+    color: black;
+    text-decoration: underline;
 }
 
 a:not(.btn):hover{
     color: gray;
+}
+
+p .link:hover{
+    color: #0061ff;
 }
 
 section:not(.hero){
@@ -310,5 +321,28 @@ main{
 }
 
 
+.box{
+    float: left;
+    width: calc(100% / 3 - 40px); 
+}
+
+.row-box{
+    margin: 70px 0;
+}
+.box.box-left{
+    margin-right: 60px;
+}
+
+.box.box-right{
+    margin-left: 60px;
+}
+
+.box-img img{
+    width:100%;
+}
+
+.box-text h3{
+    margin: 20px 0;
+}
 
 /* footer */
