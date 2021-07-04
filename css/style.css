@@ -392,28 +392,36 @@ section.team{
     margin: 200px 0 100px;
 }
 
-.team-bottom{
-    background-color: #f5f5f5;
-} 
-
 .team-top .link{
     margin: 30px 0;
 }
 
+
 .team-col{
-    display: inline-block;
+    float: left;
     width: calc(100% / 3);
-    vertical-align: text-top;
+
+}
+.team-col.center{
     position: relative;
 }
-
-.team-col.center{
-    padding: 40px 40px 0 40px;
+.team-col.center::after{
+    background-color: #f5f5f5;
+    padding-bottom: 100%;
+    content: "";
+    display: block;
 }
 
-.team-col.center #author{
-    margin-bottom: 0;
+.team-container{
+    position: absolute;
+    background-color: #f5f5f5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 40px;
 }
+
 .team-box{
     width: 50%;
     float: left;
