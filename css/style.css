@@ -70,13 +70,17 @@ h3{
     font-size: 25px;
 }
 
+h4{
+    font-size: 20px;
+}
+
 h5{
     font-size: 16px;
 }
 
 p{
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 25px;
 }
 
 
@@ -109,11 +113,13 @@ p .link:hover{
     color: #0061ff;
 }
 
+
 /* btn */
 button{
     border-width: 0;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
 }
 .btn{
     background-color:#0061ff;
@@ -164,6 +170,7 @@ header{
 .logo{
     width: 8%;
 }
+
 .logo img{
     width: 100%;
     vertical-align: middle;
@@ -173,6 +180,7 @@ header{
 .nav-left, .nav-right{
     width: 46%;
 }
+
 .nav-right{
     text-align: right;
 }
@@ -181,6 +189,7 @@ header{
 header nav li{
     display: inline-block;
     margin-left: 30px;
+    vertical-align: middle;
 }
 
 
@@ -378,6 +387,7 @@ main{
 
 .partner-right p{
     margin: 20px 0;
+    line-height: 30px;
 }
 
 
