@@ -94,6 +94,11 @@ p .link:hover{
 }
 
 /* btn */
+button{
+    border-width: 0;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
 .btn{
     background-color:#0061ff;
     color: white;
@@ -277,9 +282,6 @@ main{
     padding: 25px;
 }
 
-.plan-cost-period{
-    margin: 10px 0 40px;
-}
 .plans .price{
     font-weight: 600;
 }
@@ -350,16 +352,18 @@ main{
 }
 
 
-#enterprise .plan-details{
-    position: relative;
+.plan-details > div{
+    float: left;
 }
 
-#enterprise .plan-details a{
-    position: absolute;
-    right: 25px;
-    top: 25px;
+.enterprise-left{
+    width: 70%;
 }
 
+.enterprise-right{
+    width: 30%;
+    text-align: right;
+}
 
 .partner-left, .partner-right{
     float: left;
