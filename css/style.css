@@ -34,6 +34,37 @@ body{
     margin: auto;
 }
 
+section{
+    margin-top: 200px;
+}
+
+
+
+
+/* typo */
+h1{
+    font-size: 75px;
+    padding: 80px 0 40px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+h5{
+    font-size: 16px;
+}
+p{
+    font-size: 15px;
+    line-height: 20px;
+}
+
+
+/* link */
 a{
     display: inline-block;
     font-size: 15px;
@@ -62,40 +93,6 @@ p .link:hover{
     color: #0061ff;
 }
 
-section:not(.hero){
-    margin: 200px 0;
-}
-
-
-
-
-
-/* typo */
-h1{
-    font-size: 75px;
-    padding: 80px 0 40px;
-}
-
-h2{
-    font-size: 40px;
-}
-
-h3{
-    font-size: 25px;
-}
-
-h5{
-    font-size: 16px;
-}
-p{
-    font-size: 15px;
-    line-height: 20px;
-}
-
-
-
-
-
 /* btn */
 .btn{
     background-color:#0061ff;
@@ -104,15 +101,20 @@ p{
     text-align: center;
     padding: 7px 15px;
 }
+
 .btn.extended{
     width: 100%;
 }
+
 .btn.wth{
     background-color: white;
     color: black;
     border: 1px solid black;
 }
 
+.btn.large{
+    padding: 10px 60px;
+}
 
 .btn:hover{
     background-color: rgba(0, 97, 255, 0.8);
@@ -173,11 +175,9 @@ main{
     padding-top: 70px;
 }
 
-
-
-
 .hero{
     background-color: #b4d0e7;
+    margin: 0;
 }
 
 .hero-text, .hero-img{
@@ -250,7 +250,7 @@ main{
 }
 
 .plan.plan-col{
-    height: 1000px;
+    min-height: 1000px;
     float: left;
     width: calc(100% / 3 - 40px); 
 }
@@ -404,11 +404,6 @@ main{
     margin: 20px 0;
 }
 
-
-section.team{
-    margin: 200px 0 100px;
-}
-
 .team-top .link{
     margin: 30px 0;
 }
@@ -417,7 +412,6 @@ section.team{
 .team-col{
     float: left;
     width: calc(100% / 3);
-
 }
 
 .team-col.center{
@@ -429,6 +423,10 @@ section.team{
     padding-bottom: 100%;
     content: "";
     display: block;
+}
+
+.team-col.center .team-container{
+    overflow: auto;
 }
 
 .team-container{
@@ -445,6 +443,13 @@ section.team{
     width: 50%;
     float: left;
     position: relative;
+    border: 12px solid rgba(255, 255, 255, 0);
+    padding: 12px;
+}
+
+.team-box:hover{
+    border: 12px solid rgba(255, 255, 255, 0.5);
+    padding: 12px;
 }
 
 .team-box::after{
@@ -469,10 +474,9 @@ section.team{
     margin: 30px 0;
 }
 
+
 #designit{
     background-color: #a2d39b;
-    padding: -12px;
-    border: 12px solid #d0e9cd;
 }
 
 #arizona{
@@ -503,30 +507,39 @@ section.team{
     background-color: #ffd830;
 }
 
-.prova-gratuita{
+
+
+section.call-to-action{
     background-color: #b4d0e7;
+    margin: 0 0 100px;
 }
 
-.prova-gratuita .small-container{
-    padding: 100px 0;
+.call-to-action .small-container{
     position: relative;
 }
 
-.prova-gratuita h2{
+.call-to-action .small-container > div{
+    float: left;
+    padding: 100px 0;
+}
+.call-to-action-left{
+    width: 70%;
+}
+
+.call-to-action-right{
+    width: 30%;
+    text-align: right;
+}
+.call-to-action h2{
     color: #61082b;
 }
 
-.prova-gratuita .btn.wth{
-    border: 0;
-    position: absolute;
-    top: 100px;
-    right: 0;
-    padding: 10px 60px;
-}
 
 section.faq{
     margin: 100px 0;
 }
+
+
 
 .faq ul{
     list-style: none;
@@ -534,12 +547,13 @@ section.faq{
 }
 
 .faq li{
-    border-top: 1px solid #dcdcde;
     border-bottom: 1px solid #dcdcde;
     padding: 30px 30px 30px 0;
-    margin-top: -1px;
 }
 
+.faq li:first-child{
+    border-top: 1px solid #dcdcde;
+}
 
 .faq li h5{
     float: left;
@@ -548,6 +562,8 @@ section.faq{
 .faq li span{
     float: right;
 } 
+
+
 /* footer */
 
 footer{
