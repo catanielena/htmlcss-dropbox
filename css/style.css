@@ -16,10 +16,8 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-.clearfix::after{
-    content: "";
-    display: table;
-    clear: both;
+section{
+    margin-top: 200px;
 }
 
 .container{
@@ -34,10 +32,20 @@ body{
     margin: auto;
 }
 
-section{
-    margin-top: 200px;
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
+
+.f-left{
+    float: left;
+}
+
+.f-right{
+    float: right;
+}
 
 
 
@@ -145,10 +153,6 @@ header{
     background-color: white;
 }
 
-
-.logo, header nav{
-    float: left;
-}
 .logo{
     width: 8%;
 }
@@ -158,10 +162,10 @@ header{
 }
 
 
-nav.left, nav.right{
+.nav-left, .nav-right{
     width: 46%;
 }
-nav.right{
+.nav-right{
     text-align: right;
 }
 
@@ -183,10 +187,6 @@ main{
 .hero{
     background-color: #b4d0e7;
     margin: 0;
-}
-
-.hero-text, .hero-img{
-    float: left;
 }
 
 .hero-text{
@@ -256,7 +256,6 @@ main{
 
 .plan.plan-col{
     min-height: 1000px;
-    float: left;
     width: calc(100% / 3 - 40px); 
 }
 
@@ -282,11 +281,13 @@ main{
     padding: 25px;
 }
 
-.plans .price{
-    font-weight: 600;
+.plan-details .price{
+    font-weight: 700;
+    margin: 16px 0 8px;
+    font-size: 17px;
 }
 
-.plans .period{
+.plan-details .period{
     color: #74828f;
 }
 
@@ -352,10 +353,6 @@ main{
 }
 
 
-.plan-details > div{
-    float: left;
-}
-
 .enterprise-left{
     width: 70%;
 }
@@ -366,7 +363,6 @@ main{
 }
 
 .partner-left, .partner-right{
-    float: left;
     width: 50%;
 }
 
@@ -383,53 +379,53 @@ main{
 }
 
 
-.box{
-    float: left;
-    width: calc(100% / 3 - 40px); 
-}
 
-.row-box{
+.activities-boxes .row-box{
     margin: 70px 0;
 }
 
-.box.box-left{
+.activities-box{
+    width: calc(100% / 3 - 40px); 
+}
+
+.activities-box.box-left{
     margin-right: 60px;
 }
 
-.box.box-right{
+.activities-box.box-right{
     margin-left: 60px;
 }
 
-.box-img img{
+.activities-box .box-img img{
     width:100%;
 }
 
-.box-text h3{
+.activities-box .box-text h3{
     margin: 20px 0;
 }
+
+
 
 .team-top .link{
     margin: 30px 0;
 }
 
-
 .team-col{
-    float: left;
     width: calc(100% / 3);
 }
 
-.team-col.center{
+.team-col-center{
     position: relative;
 }
 
-.team-col.center::after{
+.team-col-center::after{
     background-color: #f5f5f5;
     padding-bottom: 100%;
     content: "";
     display: block;
 }
 
-.team-col.center .team-container{
+.team-col-center .team-container{
     overflow: auto;
 }
 
@@ -445,7 +441,6 @@ main{
 
 .team-box{
     width: 50%;
-    float: left;
     position: relative;
     border: 12px solid rgba(255, 255, 255, 0);
     padding: 12px;
@@ -474,7 +469,7 @@ main{
     width: 30%;
 }
 
-.team-col.center p, .team-col.center .line {
+.team-col-center p, .team-col-center .line {
     margin: 30px 0;
 }
 
@@ -523,9 +518,9 @@ section.call-to-action{
 }
 
 .call-to-action .small-container > div{
-    float: left;
     padding: 100px 0;
 }
+
 .call-to-action-left{
     width: 70%;
 }
@@ -559,13 +554,6 @@ section.faq{
     border-top: 1px solid #dcdcde;
 }
 
-.faq li h5{
-    float: left;
-}
-
-.faq li span{
-    float: right;
-} 
 
 
 /* footer */
@@ -581,7 +569,6 @@ footer{
 }
 
 .footer-col{
-    float: left;
     width: 20%;
 }
 
