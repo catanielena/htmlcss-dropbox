@@ -317,14 +317,14 @@ main{
 }
 
 .fa-ul li{
-    padding-left: 1.3em;
+    padding-left: 20px;
 }
 
 .fa-ul > li:before {
     font-family: "Font Awesome 5 Free";
     display: inline-block;
-    margin-left: -1.3em;
-    width: 1.3em; 
+    margin-left: -20px;
+    width: 20px; 
 }
 
 .fa-ul.check > li:before{
